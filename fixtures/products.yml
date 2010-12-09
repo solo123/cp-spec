@@ -1,0 +1,18 @@
+p1:
+  id: 1
+  name: 三星 W589
+  brand_id: 3
+  permalink: sx-w589
+  description: "discript 1"
+p2:
+  id: 2
+  name: 知己 888
+  brand_id: 4
+  permalink: zj-888
+  description: "discript 2"
+p3:
+  id: 3
+  name: 三星 W589C
+  brand_id: 3
+  permalink: sx-w589c
+  description: "discript 3 -- for longer"

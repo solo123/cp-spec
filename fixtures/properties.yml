@@ -1,0 +1,12 @@
+p1:
+  id: 1
+  name: prop1
+  presentation: prop1
+p2:
+  id: 2
+  name: prop2
+  presentation: prop2
+p3:
+  id: 3
+  name: prop3
+  presentation: prop3

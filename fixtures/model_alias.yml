@@ -1,0 +1,20 @@
+ma1:
+  id: 1
+  product_id: 1
+  brand_id: 3
+  model: W589
+ma2:
+  id: 2
+  product_id: 1
+  brand_id: 3
+  model: 589
+ma3:
+  id: 3
+  product_id: 2
+  brand_id: 4
+  model: 888
+ma4:
+  id: 4
+  product_id: 3
+  brand_id: 3
+  model: W589C

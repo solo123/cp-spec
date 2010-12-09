@@ -1,0 +1,25 @@
+pp1:
+  id: 1
+  product_id: 1
+  property_id: 1
+  value: value-pp1-v1
+pp2:
+  id: 2
+  product_id: 1
+  property_id: 2
+  value: value-pp1-v2
+pp3:
+  id: 3
+  product_id: 3
+  property_id: 1
+  value: value-product3-v1 longer
+pp4:
+  id: 4
+  product_id: 3
+  property_id: 2
+  value: value-product3-v2 longer
+pp5:
+  id: 5
+  product_id: 1
+  property_id: 3
+  value: value-pp1-v3
