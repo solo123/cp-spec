@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe "Product test" do
-  fixtures :taxonomies, :taxons, :products, :model_alias, :variants, :properties, :product_properties
+  fixtures :taxonomies, :taxons, :products, :model_alias, :variants, :properties, :product_properties, :assets
   it "find by brand and model" do
     a1 = MobileHelper.find_mobile('三星','W589')
     a2 = MobileHelper.find_mobile('三星','589')
@@ -17,7 +17,7 @@ describe "Product test" do
     p2.should_not be_nil
     p1.id.should_not == p2.id
 
-    MobileHelper.merge(p1.id, p2.id)
+    MobileHelper.merge([p1.id, p2.id])
     pp1 = MobileHelper.find_mobile('三星', 'W589')
     pp2 = MobileHelper.find_mobile('三星', 'W589C')
     pp1.should_not be_nil
@@ -29,7 +29,11 @@ describe "Product test" do
     pp1.property('prop1').should == p2.property('prop1')
     pp1.property('prop2').should == p2.property('prop2')
     pp1.property('prop3').should == p1.property('prop3')
+
+    Asset.where('viewable_type="Product" and viewable_id=?', pp1.id).count.should == 2
   end
+
+
 end
 
 describe "taxon test" do

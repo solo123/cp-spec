@@ -1,0 +1,21 @@
+as1:
+  id: 1
+  viewable_id: 1
+  viewable_type: Product
+  attachment_content_type: image/jpeg
+  attachment_file_name: aa.jpg
+  position: 1
+as2:
+  id: 2
+  viewable_id: 2
+  viewable_type: Product
+  attachment_content_type: image/jpeg
+  attachment_file_name: bb.jpg
+  position: 1
+as3:
+  id: 3
+  viewable_id: 3
+  viewable_type: Product
+  attachment_content_type: image/jpeg
+  attachment_file_name: cc.jpg
+  position: 1

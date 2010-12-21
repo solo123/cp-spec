@@ -1,0 +1,25 @@
+  it " > model alias" do
+    p = Product.first
+    p.alias.should_not be_nil
+    p.alias = 'a1,a2,a3,a4'
+    p.alias.should == 'a1,a2,a3,a4'
+
+    p1 = MobileHelper.find_mobile('三星', 'a1')
+    p1.should_not be_nil
+    p1.id.should == p.id
+
+    p1 = MobileHelper.find_mobile('三星', 'a2')
+    p1.should_not be_nil
+    p1.id.should == p.id
+
+    p1 = MobileHelper.find_mobile('三星', 'a3')
+    p1.should_not be_nil
+    p1.id.should == p.id
+
+    p1 = MobileHelper.find_mobile('三星', 'a4')
+    p1.should_not be_nil
+    p1.id.should == p.id
+
+    p1 = MobileHelper.find_mobile('三星', 'W589')
+    p1.should be_nil
+  end
